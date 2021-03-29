@@ -9,7 +9,8 @@
         "laravel/lumen-framework": "5.4.*",
         "vlucas/phpdotenv": "~2.2",
         "flipbox/lumen-generator": "5.*",
-        "dusterio/lumen-passport": "^0.2.0"
+        "dusterio/lumen-passport": "^0.2.0",
+        "lcobucci/jwt": "3.3.0"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",

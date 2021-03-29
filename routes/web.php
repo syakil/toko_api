@@ -14,3 +14,11 @@
 $app->get('/', function () use ($app) {
     return $app->version();
 });
+
+
+$app->post('/register','AuthController@register');
+$app->post('/login','AuthController@login');
+
+$app->group(['middleware' => 'auth'], function () use ($app) {
+    $app->get('/tabel_transaksi_toko','TabelTransaksiTokoController@index');
+});
